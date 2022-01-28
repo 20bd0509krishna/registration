@@ -1,0 +1,32 @@
+﻿<html>
+<body bgcolor="gray" align="center">
+<script type="text/javascript">
+function validation()
+{
+	val=/^[A-Za-z]+$/;
+	if(!val.test(document.main.uname.value))
+	        window.alert("Invalid username");
+            if(document.main.pwd.value.length<6)
+            window.alert("password is too short");
+            if(document.main.mob.value.length<10)
+            window.alert("Invalid Mobile number");
+    }
+     </script>
+     <font style="color:violet" ; size="40">
+    <head bgcolor="blue">REGISTRATION FORM </head></font> 
+    <form name="main" onsubmit="validation()" action="reg1.jsp">
+    UserName:
+    <input type="text" name="uname" >
+    <br>
+    Password:<input type="password"name="pwd">
+    <br>
+    Gender:
+    Male<input type="radio" name="xyz">
+    Female<input type="radio" name="xyz">
+    <br>
+    Mobile No<input type="number" name="mob">
+    <br>
+    <input type="submit"onclick="validation()">
+    </form>
+
+     </body>
